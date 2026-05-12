@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radhakrishna - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h2>Radhakrishna</h2>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Hi, I'm <span>Radhakrishna</span></h1>
+        <p>2nd Year AI Student | Web Developer | Intern at Thiranex</p>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+            Contact Me
+        </button>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a 2nd year student pursuing my Bachelor's in Artificial Intelligence. 
+           I am passionate about web development and currently doing my first internship at Thiranex. 
+           I love learning new technologies and building projects.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">Express.js</div>
+            <div class="skill">AI Basics</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>1. Personal Portfolio Website</h3>
+            <p>Full-stack portfolio with working contact form using Node.js & Express.</p>
+            <p>Tech: HTML, CSS, JavaScript, Node.js, Express</p>
+        </div>
+        <div class="project">
+            <h3>2. Thiranex Internship Project</h3>
+            <p>Working on real-time projects during my first internship at Thiranex.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="status"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
